@@ -1,11 +1,13 @@
 from tkinter import *
+from components import topbar, inputFeild, speedrunButton
 
 
 window = Tk()
 window.geometry("620x620")
-window.title("Wikipedia Speedrun")
-icon = PhotoImage(file="WikipediaSpeedrunIcon.png")
-window.iconphoto(True, icon)
+topbar(window)
+inputFeild(window, "Enter First Wikipedia Link")
+inputFeild(window, "Enter Second Wikipedia Link")
+speedrunButton(window)
 
 
 if __name__ == "__main__":
